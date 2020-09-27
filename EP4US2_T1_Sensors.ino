@@ -59,7 +59,7 @@ void loop() {
   float f = dht.readTemperature(true);
 
   // Ambient Light Sensor
-  float ambientLight = float(analogRead(AMBIENT_LIGHT)) / 4096 * 5;
+  float ambientLight = float(analogRead(AMBIENT_LIGHT)) / 4096 * 3.3;
   
   //Display Sensor data on the Serial Monitor
   Serial.println("Humidity: " + String(h)); 
